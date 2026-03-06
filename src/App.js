@@ -1,13 +1,13 @@
-import React from 'react'; // React ko import kiya
+import React from 'react'; 
 import './App.css';
 
 function App() {
-  // Error yahan tha: Humne React.useState likh kar isse fix kar diya
+  
   const [alertActive, setAlertActive] = React.useState(false);
 
   const triggerSOS = () => {
     setAlertActive(true);
-    // 5 seconds baad alert off ho jaye
+    
     setTimeout(() => {
       setAlertActive(false);
     }, 5000);
