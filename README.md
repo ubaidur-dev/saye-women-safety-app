@@ -1,70 +1,28 @@
-# Saye - Women Safety App
+# SAYE - Your Safety, Our Shadow
+SAYE is a minimal, high-impact safety tool designed to get help fast. I built this focusing on one thing: speed. In an emergency, you don't have time to navigate menus, so I engineered a single-trigger interface that works instantly when every second counts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Key Features
+* **Instant SOS Trigger:** A high-priority button that activates the emergency state the moment it's touched.
+* **Visual Pulse Feedback:** I added a custom ripple animation so the user gets an immediate visual "handshake" that the alert is active.
+* **Auto-Reset Logic:** The system handles its own state, automatically cooling down after 5 seconds to stay ready for the next action.
+* **High-Visibility UI:** Designed with a dark "Slate & Rose" theme to make sure the SOS button is the first thing you see, even in low light.
+* **Live Status Updates:** The button text changes dynamically from "SOS" to "SENDING..." to keep the user informed in real-time.
 
-## Available Scripts
+### Why I Built This
+Most safety apps are too cluttered. I wanted to see how I could use React hooks to build something life-saving yet incredibly simple. I handled the state management and the CSS animations myself to ensure the app stays lightweight and responds without any lag. It's about tech serving a human purpose.
 
-In the project directory, you can run:
+### Extended Technical Description
+* **React State Handling:** Used useState to manage the alert lifecycle, ensuring the UI stays in sync with the background logic.
+* **Custom Ripple Engine:** Instead of using a library, I wrote the @keyframes logic from scratch to keep the pulse animation smooth and performant.
+* **Asynchronous Timing:** Implemented setTimeout to control the alert flow, simulating a real-world server handshake.
+* **Clean Code Structure:** The project is kept lean with zero heavy dependencies, making it easy to scale or integrate with location services later.
 
-### `npm start`
+### Tech Stack
+* **React.js:** For the core component logic.
+* **Modern CSS:** For the pulse effects and responsive layout.
+* **JavaScript:** For handling the timers and event triggers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### How to Use
+* Clone the repo.
+* Run **npm install** and then **npm start**.
+* The app will open at **localhost:3000**, ready for testing.
